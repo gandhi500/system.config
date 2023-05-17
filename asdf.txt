@@ -1,0 +1,329 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h> 
+#include<string.h>
+char *buff,*t1,*t2,*t3,ch;
+FILE *fp;
+int pid;
+void typeline(char *t2,char *t3)
+{
+int i,n,count=0,num;
+if((fp=fopen(t3,"r"))==NULL)
+printf("File not found\n");
+if(strcmp(t2,"a")==0)
+{
+while((ch=fgetc(fp))!=EOF)
+printf("%c",ch);
+fclose(fp);
+return;
+} 
+n=atoi(t2);
+if(n>0)
+{
+i=0;
+while((ch=fgetc(fp))!=EOF)
+{
+if(ch=='\n')
+i++;
+if(i==n)
+break;
+printf("%c",ch);
+}
+printf("\n");
+}
+else
+{
+count=0;
+while((ch=fgetc(fp))!=EOF)
+if(ch=='\n')
+count++;
+fseek(fp,0,SEEK_SET);
+i=0;
+while((ch=fgetc(fp))!=EOF)
+{
+if(ch=='\n')
+i++;
+if(i==count+n-1)
+break;
+}
+while((ch=fgetc(fp))!=EOF)
+printf("%c",ch);
+}
+fclose(fp);
+}
+main()
+{
+while(1)
+{
+printf("myshell$");
+fflush(stdin);
+t1=(char *)malloc(80);
+t2=(char *)malloc(80);
+t3=(char *)malloc(80);
+buff=(char *)malloc(80);
+fgets(buff,80,stdin);
+sscanf(buff,"%s %s %s",t1,t2,t3);
+if(strcmp(t1,"pause")==0)
+exit(0);
+else if(strcmp(t1,"typeline")==0)
+typeline(t2,t3);
+else
+{
+pid=fork();
+if(pid<0)
+printf("Child process is not created\n");
+else if(pid==0)
+{
+execlp("/bin",NULL);
+if(strcmp(t1,"exit")==0)
+exit(0);
+system(buff);
+}
+else
+{
+wait(NULL);
+exit(0);
+}
+}
+}
+}
+
+
+
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
+
+int main() {
+     int number1, number2, sum;
+    int fd = open("input.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    if (fd == -1) {
+        perror("Failed to open file");
+        return 1;
+    }
+
+    if (dup2(fd, STDOUT_FILENO) == -1) {
+        perror("Failed to redirect stdout");
+        return 1;
+    }
+    scanf("%d %d", &number1, &number2);
+    sum = number1 + number2;
+    printf("%d + %d = %d\n", number1, number2, sum);
+    printf("This text will be written to the file.\n");
+
+    close(fd);
+    return 0;
+}
+
+
+func removeMiddleAs(_ input: String) -> String {
+    
+    
+    var result = ""
+    let lastIndex = input.count-1
+    
+    for (index, char) in input.enumerated() {
+        if char == "a" && (index != 0 && index != lastIndex) {
+            continue
+        }
+        result.append(char)
+    }
+    
+    return result
+}
+
+
+public class Company {
+    int id;
+    String name;
+    String address;
+
+    public Company(int id, String name, String address, String phoneNumber) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+    }
+
+    String phoneNumber;
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
+}
+
+
+public class Company {
+    int id;
+    String name;
+    String address;
+
+    public Company(int id, String name, String address, String phoneNumber) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+    }
+
+    String phoneNumber;
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
+}
+
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class DatabaseHelper extends SQLiteOpenHelper {
+
+    static String DB_NAME = "company_db";
+    static int DB_VERSION = 1;
+
+    static String TABLE_COMPANY = "Company";
+    static String KEY_ID = "id";
+    static String KEY_NAME = "name";
+    static String KEY_ADDRESS = "address";
+
+    static String KEY_PHONE_NUMBER = "phno";
+
+
+
+
+    DatabaseHelper(Context context){
+        super(context,DB_NAME,null,DB_VERSION);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        String CREATE_TABLE = "CREATE TABLE "+
+                TABLE_COMPANY +
+                " ( "+
+                KEY_ID+" INTEGER PRIMARY KEY, "+
+                KEY_NAME +" TEXT, "+
+                KEY_ADDRESS+" TEXT, "+
+                KEY_PHONE_NUMBER+" TEXT"+
+                ")";
+        db.execSQL(CREATE_TABLE);
+    }
+
+    //Migration
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+        //Delete if exist
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_COMPANY );
+        // Create tables again
+        onCreate(db);
+    }
+
+    long  insertCompanyDetails(Company company){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cValues = new ContentValues();
+        cValues.put(KEY_ID,company.id);
+        cValues.put(KEY_NAME, company.name);
+        cValues.put(KEY_ADDRESS, company.address);
+        cValues.put(KEY_PHONE_NUMBER, company.phoneNumber);
+       return db.insert(TABLE_COMPANY,null,cValues);
+    }
+
+
+    ArrayList<Company> getAllCompanyDetails(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT * "+ "from " +TABLE_COMPANY;
+        ArrayList<Company> companyArrayList = new ArrayList<>();
+        Cursor cursor = db.rawQuery(query,null);
+        while (cursor.moveToNext()){
+            int id = cursor.getInt(cursor.getColumnIndex(KEY_ID));
+            String name = cursor.getString(cursor.getColumnIndex(KEY_NAME));
+            String address = cursor.getString(cursor.getColumnIndex(KEY_ADDRESS));
+            String phoneNumber = cursor.getString(cursor.getColumnIndex(KEY_PHONE_NUMBER));
+
+            companyArrayList.add(new Company(id,name,address,phoneNumber));
+        }
+
+        cursor.close();
+        return  companyArrayList;
+    }
+
+}
+
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+    DatabaseHelper dbHelper ;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        dbHelper = new DatabaseHelper(this);
+
+        EditText et_id = findViewById(R.id.et_id);
+        EditText et_name = findViewById(R.id.et_name);
+        EditText et_address = findViewById(R.id.et_address);
+        EditText et_phone = findViewById(R.id.et_phone);
+        Button bt_insert = findViewById(R.id.bt_insert);
+        Button bt_view_all = findViewById(R.id.bt_view_all);
+        TextView tv_output = findViewById(R.id.tv_output);
+
+        bt_insert.setOnClickListener((view)->{
+
+            int id = Integer.parseInt(et_id.getText().toString());
+            String name = et_name.getText().toString();
+            String address = et_address.getText().toString();
+            String phone = et_phone.getText().toString();
+            Company company = new Company(id,name,address,phone);
+            long result = dbHelper.insertCompanyDetails(company);
+
+            if(result!=-1){
+                tv_output.setText("Record inserted: Row id"+result );
+            } else {
+                tv_output.setText("Error occur");
+            }
+        });
+
+        bt_view_all.setOnClickListener((view -> {
+            ArrayList<Company>  companyArrayList = dbHelper.getAllCompanyDetails();
+
+            StringBuilder output = new StringBuilder();
+
+            if(!companyArrayList.isEmpty()) {
+                for (Company company : companyArrayList) {
+                    output.append("\n");
+                    output.append(company.toString());
+                }
+            }else {
+                output.append("no records found");
+            }
+            tv_output.setText(output);
+        }));
+
+    }
+}
