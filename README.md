@@ -32,7 +32,9 @@ int main() {
     return 0;
 }
 ```
+
 OS - 2
+
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -90,8 +92,10 @@ int main() {
     return 0;
 }
 ```
+
 MT - 1
 XML MAIN - 1
+
 ``
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -129,7 +133,9 @@ XML MAIN - 1
 
 </LinearLayout>
 ```
+
 XML - 2
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -149,7 +155,9 @@ XML - 2
 
 </LinearLayout>
 ```
+
 JAVA - 1
+
 ```
 editTextNumber1 = findViewById(R.id.editTextNumber1);
         editTextNumber2 = findViewById(R.id.editTextNumber2);
@@ -181,8 +189,11 @@ editTextNumber1 = findViewById(R.id.editTextNumber1);
                 startActivity(intent);
             }
         });
-        ```
+        
+```
+        
 JAVA - 2
+
 ```
 package com.maverick.average_power;
 
@@ -206,8 +217,10 @@ public class ResultActivity extends AppCompatActivity {
     }
 }
 ```
+
 MT - 2
 XML
+
 ```
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -269,7 +282,9 @@ XML
 
 </LinearLayout>
 ```
+
 JAVA
+
 ```
 editTextString = findViewById(R.id.editTextString);
         radioGroupOperations = findViewById(R.id.radioGroupOperations);
