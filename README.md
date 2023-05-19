@@ -15,6 +15,7 @@ int main() {
     scanf("%s", filename);
 
     // Get file statistics
+    // stat() function is used to list properties of a file identified by path . It reads all file properties and dumps to buf structure. The function is defined in sys/stat. h header file.
     if (stat(filename, &fileStat) < 0) {
         perror("Error");
         return 1;
@@ -22,11 +23,40 @@ int main() {
 
     // Print file properties
     printf("File Properties:\n");
+    // The file serial number, which distinguishes this file from all other files on the same device.
     printf("Inode number: %ld\n", fileStat.st_ino);
+    // The number of hard links to the file. This count keeps track of how many directories have entries for this file. If the count is ever decremented to zero, then the file itself is discarded as soon as no process still holds it open. Symbolic links are not counted in the total.
     printf("Number of hard links: %ld\n", fileStat.st_nlink);
+    // st_mode Specifies the mode of the file. This includes file type information (see Testing the Type of a File) and the file permission bits (see The Mode Bits for Access Permission).
+    // S_IRWXU This is equivalent to read, write and execute
+    // S_IRGRP
+//Read permission bit for the group owner of the file. Usually 040.
+
+//S_IWGRP
+//Write permission bit for the group owner of the file. Usually 020.
+
+//S_IXGRP
+//Execute or search permission bit for the group owner of the file. Usually 010.
+
+//S_IRWXG
+//This is equivalent to ‘(S_IRGRP | S_IWGRP | S_IXGRP)’.
+//S_IRGRP
+//Read permission bit for the group owner of the file. Usually 040.
+
+//S_IWGRP
+//Write permission bit for the group owner of the file. Usually 020.
+
+//S_IXGRP
+//Execute or search permission bit for the group owner of the file. Usually 010.
+
+//S_IRWXG
+//This is equivalent to ‘(S_IRGRP | S_IWGRP | S_IXGRP)’.
     printf("File permissions: %o\n", fileStat.st_mode & (S_IRWXU | S_IRWXG | S_IRWXO));
+    // This specifies the size of a regular file in bytes. For files that are really devices this field isn’t usually meaningful. For symbolic links this specifies the length of the file name the link refers to.
     printf("File size: %ld bytes\n", fileStat.st_size);
+    //This is the last access time for the file. See File Times.
     printf("Last access time: %s", ctime(&fileStat.st_atime));
+    //This is the time of the last modification to the contents of the file. See File Times.
     printf("Last modification time: %s", ctime(&fileStat.st_mtime));
 
     return 0;
@@ -53,6 +83,7 @@ int main() {
     double user_time = 0, kernel_time = 0;
 
     for (int i = 0; i < n; i++) {
+    //The fork() is used for creating a new copy of the calling function. The newly created process is known as the Child process and the process from which the child process is created is known as the parent process.
         pid_t pid = fork();
 
         if (pid == 0) {
@@ -62,6 +93,7 @@ int main() {
             // Parent process
             continue;
         } else {
+        //The perror() function prints an error message to stderr . If string is not NULL and does not point to a null character, the string pointed to by string is printed to the standard error stream, followed by a colon and a space
             perror("fork");
             exit(1);
         }
@@ -71,12 +103,14 @@ int main() {
     int status;
     pid_t child_pid;
     while ((child_pid = wait(&status)) != -1) {
+    // WIFEXITED–Query status to see if a child process ended normally. This macro queries the child termination status provided by the wait and waitpid functions, and determines whether the child process ended normally.
         if (WIFEXITED(status)) {
             printf("Child process %d terminated.\n", child_pid);
         }
     }
 
     // Calculate total cumulative time spent by children
+    // Please note that the times() function returns the process times in clock ticks, so we divide them by sysconf(_SC_CLK_TCK) to convert them into seconds. Also, keep in mind that the actual time spent in user and kernel mode may vary depending on the system's scheduling and other factors.
     start_clock = times(&start_time);
     for (int i = 0; i < n; i++) {
         end_clock = times(&end_time);
