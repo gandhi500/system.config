@@ -1,0 +1,101 @@
+Q.1
+// Car interface
+interface Car {
+    void assemble();
+}
+
+// Concrete implementation of Car
+class BasicCar implements Car {
+    @Override
+    public void assemble() {
+        System.out.println("Basic car is assembled.");
+    }
+}
+
+// Decorator pattern for Sports Car
+class SportsCar implements Car {
+    private Car car;
+
+    public SportsCar(Car car) {
+        this.car = car;
+    }
+
+    @Override
+    public void assemble() {
+        car.assemble();
+        System.out.println("Adding features of a Sports Car.");
+    }
+}
+
+// Decorator pattern for Luxury Car
+class LuxuryCar implements Car {
+    private Car car;
+
+    public LuxuryCar(Car car) {
+        this.car = car;
+    }
+
+    @Override
+    public void assemble() {
+        car.assemble();
+        System.out.println("Adding features of a Luxury Car.");
+    }
+}
+
+// Client code
+public class DecoratorPatternExample {
+    public static void main(String[] args) {
+        Car basicCar = new BasicCar();
+        new SportsCar(basicCar).assemble();
+        System.out.println();
+        new LuxuryCar(basicCar).assemble();
+    }
+}
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+Q.2
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+
+# Sample dataset
+data = {
+    'Category': ['A', 'B', 'A', 'C', 'B', 'C', 'A', 'C'],
+    'Value': [10, 20, 15, 25, 30, 22, 18, 27]
+}
+
+# Creating a DataFrame
+df = pd.DataFrame(data)
+
+# Displaying the original dataset
+print("Original Dataset:")
+print(df)
+
+# Creating a LabelEncoder
+label_encoder = LabelEncoder()
+
+# Converting categorical values to numeric format
+df['Category'] = label_encoder.fit_transform(df['Category'])
+
+# Displaying the dataset after conversion
+print("\nDataset after converting categorical values to numeric format:")
+print(df)
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+Q.3
+const http = require('http');
+// Create a server and define the request handling function
+const server = http.createServer((req, res) => {
+    // Set the response header with a 200 status (OK) and content type
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+
+    // Send the response body
+    res.end('Hello, World!\n');
+});
+
+// Listen on port 3000
+const port = 3000;
+server.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});
