@@ -1,0 +1,405 @@
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Write a Java Program to implement I/O Decorator for converting uppercase letters to lower case letters. [20 M]
+Write a Python program to prepare Scatter Plot for Iris Dataset [20 M]
+Create an HTML form that contain the Student Registration details and write a JavaScript to validate Student first and last name as it should not contain other than alphabets and age should be between 18 to 50.
+Viva
+[20 M] [10 M]
+1
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+     Write a Java Program to implement Singleton pattern for multithreading
+Write a python program to find all null values in a given dataset and remove them.
+[20 M]
+Create an HTML form that contain the Employee Registration details and writea JavaScript to validate DOB, Joining Date, and Salary. [20 M]
+Viva
+[10 M]
+2
+[20 M]
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a JAVA Program to implement built-in support (java.util.Observable) Weather station with members temperature, humidity, pressure and methods mesurmentsChanged(), setMesurment(), getTemperature(), getHumidity(), getPressure() [20 M]
+Q. 2. Write a python program to make Categorical values in numeric format for a given dataset [20 M]
+Q. 3. Create an HTML form for Login and write a JavaScript to validate email ID
+using Regular Expression. Q.4 Viva
+[20 M] [10 M]
+3
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1
+Q. 2 Q. 3
+Write a Java Program to implement Factory method for Pizza Store with createPizza(), orederPizza(), prepare(), Bake(), cut(), box(). Use this to create variety of pizza’s
+like NyStyleCheesePizza, ChicagoStyleCheesePizza etc. [20 M]
+Write a python program to Implement Simple Linear Regression for predicting house price. [20 M]
+Create a Node.js file that will convert the output "Hello World!" into upper-case
+letters. Q.4 Viva
+[20 M] [10 M]
+4
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+     Write a Java Program to implement Adapter pattern for Enumeration iterator
+Write a python program to implement Multiple Linear Regression for given dataset.
+[20 M]
+Q. 3 Using nodejs create a web page to read two file names from user and append contents
+of first file into second file.
+Q.4 Viva
+[20 M] [10 M]
+5
+[20 M]
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+     Write a Java Program to implement command pattern to test Remote Control
+Write a python program to implement Polynomial Linear Regression for given dataset [20 M]
+Q.3. Create a Node.js file that opens the requested file and returns the content to the client. If anything goes wrong, throw a 404 error. [20 M]
+Q.4 Viva
+[10 M]
+6
+[20 M]
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+[20 M] [20 M]
+[20 M] [10 M]
+     Q.1
+Q.2.
+Q. 3
+Q.4 Viva
+Write a Java Program to implement undo command to test Ceiling fan. Write a python program to implement Naive Bayes.
+Create a Node.js file that writes an HTML form, with an upload field.
+7
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+     Q. 1
+Q.2.
+Write a Java Program to implement State Pattern for Gumball Machine.
+Create instance variable that holds current state from there, we just need to handle all actions, behaviors and state transition that can happen [20 M]
+Write a python program to implement Decision Tree whether or not to play Tennis. [20 M]
+Q. 3
+Q.4 Viva
+Create a Node.js file that demonstrates create database and table in MySQL. [20 M] [10 M]
+8
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+[20 M]
+[20 M]
+     Q.1 Q 2. Q. 3
+Q.4
+Design simple HR Application using Spring Framework Write a python program to implement Linear SVM.
+Create a node.js file that Select all records from the "customers" table, and display the
+result object on console.
+Viva
+[20 M] [10 M]
+9
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Strategy Pattern for Duck Behavior. Create instance variable that holds current state of Duck from there, we just need to handle all Flying Behaviors and Quack Behavior [20 M]
+Q. 2 Write a Python program to prepare Scatter Plot for Iris Dataset. [20 M] Q. 3 Create a node.js file that Insert Multiple Records in "student" table, and display the
+result object on console.
+Q.4 Viva
+[20 M] [10 M]
+10
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a java program to implement Adapter pattern to design Heart Model to Beat Model [20 M]
+Q2. Write a python program to find all null values in a given dataset and remove them.
+[20 M]
+Create a node.js file that Select all records from the "customers" table, and delete the
+specified record.
+[20 M] Viva [10 M]
+11
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Decorator Pattern for interface Car to define the assemble() method and then decorate it to Sports car and Luxury Car [20 M]
+Q. 2 Write a python program to make Categorical values in numeric format for a given
+dataset
+Create a Simple Web Server using node js.
+Viva
+[20 M]
+[20 M] [10 M]
+12
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement an Adapter design pattern in mobile charger. Define two classes – Volt (to measure volts) and Socket (producing constant volts of 120V). Build an adapter that can produce 3 volts, 12 volts and default 120 volts.
+Implements Adapter pattern using Class Adapter
+Q.2. Write a Python program to prepare Scatter Plot for Iris Dataset
+Using node js create a User Login System.
+Viva
+[20 M]
+[20 M]
+[20 M] [10 M]
+13
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Command Design Pattern for Command Interface with execute() . Use this to create variety of commands for LightOnCommand, LightOffCommand, GarageDoorUpCommand, StereoOnWithCDComman. [20 M]
+Q.2. Write a python program to find all null values in a given dataset and remove them.
+[20 M]
+Write node js script to interact with the filesystem, and serve a web page from a file .
+[20 M]
+Viva [10 M]
+14
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+     Write a Java Program to implement Facade Design Pattern for HomeTheater Write a python program to make Categorical values in numeric format for a given
+dataset [20 M]
+Write node js script to build Your Own Node.js Module. Use require (‘http’) module is a built-in Node module that invokes the functionality of the HTTP libraryto create a local server. Also use the export statement to make functions in your module available externally. Create a new text file to contain the functions in your module called, “modules.js” and add this function to return today’s date and time.
+Viva
+[20 M] [10 M]
+15
+[20 M]
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Write a Java Program to implement Observer Design Pattern for number conversion. Accept a number in Decimal form and represent it in Hexadecimal, Octal and Binary. Change the Number and it reflects in other forms also [20 M]
+Write a python program to Implement Simple Linear Regression for predicting house price. [20 M]
+Create a js file named main.js for event-driven application. There should be a main loop that listens for events, and then triggers a callback function when one of those
+events is detected.
+Viva
+[20 M] [10 M]
+16
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Abstract Factory Pattern for Shape interface.
+[20 M].
+Q.2. Write a python program to implement Multiple Linear Regression for a given dataset.
+[20 M]
+Write node js application that transfer a file as an attachment on web and enables browser to prompt the user to download file using express js. [20 M]
+Viva
+[10 M]
+17
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a JAVA Program to implement built-in support (java.util.Observable) Weather station with members temperature, humidity, pressure and methods mesurmentsChanged(), setMesurment(), getTemperature(), getHumidity(), getPressure() [20 M]
+Q.2. Write a python program to implement Polynomial Linear Regression for given dataset
+[20 M]
+Create your Django app in which after running the server, you should see on the browser, the text “Hello! I am learning Django”, which you defined in the index view.
+Viva
+[20 M] [10 M]
+18
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Maximum Marks: 70
+     Q.1
+Q.2.
+Write a Java Program to implement Factory method for Pizza Store with createPizza(), orederPizza(), prepare(), Bake(), cut(), box(). Use this to create variety of pizza’s
+Q.3
+Q.4 Viva
+like NyStyleCheesePizza, ChicagoStyleCheesePizza etc.
+Write a python program to implement Naive Bayes.
+[20 M]
+[20 M]
+[20 M] [10 M]
+Design a Django application that adds web pages with views and templates.
+19
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement I/O Decorator for converting uppercase letters to lower case letters. [20 M]
+Q.2. Write a python program to implement Decision Tree whether or not to play Tennis.
+[20 M]
+Develop a basic poll application (app).It should consist of two parts:
+a) A public site in which user can pick their favourite programming language and vote. b) Anadminsitethatletsyouadd,changeanddeleteprogramminglanguages.
+Viva
+[20 M] [10 M]
+20
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement command pattern to test Remote Control
+[20 M]
+Q.2. Write a python program to implement Linear SVM. [20 M] Design a Django application: A public site in which user can pick their favourite
+programming language and vote. Viva
+[20 M] [10 M]
+21
+
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+Duration : 3 Hours
+Design simple HR Application using Spring Framework
+Write a Python program to prepare Scatter Plot for Iris Dataset
+Maximum Marks: 70
+[20 M] [20 M]
+[20 M [10 M]
+     Design a Django application: An admin site that lets you add, change and delete programming languages.
+Viva
+22
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q. 1 Write a Java Program to implement State Pattern for Gumball Machine. Create instance variable that holds current state from there, we just need to handle all actions, behaviors and state transition that can happen [20 M]
+Q.2. Write a python program to find all null values in a given dataset and remove them. [20 M]
+Create your own blog using Django. Viva
+[20 M] [10 M]
+23
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Iterator Pattern for Designing Menu like Breakfast, Lunch or Dinner Menu [20 M]
+Q.2. Write a python program to make Categorical values in numeric format for a given
+dataset
+Implement Login System using Django.
+Viva
+[20 M]
+[20 M] [10 M]
+24
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Singleton pattern for multithreading [20 M] Q.2. Write a python program to Implement Simple Linear Regression for predicting house
+price.
+Create a Simple Web Server using node js.
+Viva
+[20 M] [20 M]
+[10 M]
+25
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Strategy Pattern for Duck Behavior. Create instance variable that holds current state of Duck from there, we just need to handle all Flying Behaviors and Quack Behavior. [20 M]
+Q.2. Write a python program to implement Multiple Linear Regression for given dataset. [20 M]
+Create a Node.js file that demonstrates create database and table in MySQL.
+Viva
+[20 M] [10 M]
+26
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Abstract Factory Pattern for Shape interface.
+[20 m]
+Q.2. Write a python program to implement Polynomial Linear Regression for given dataset [20 M]
+Create your Django app in which after running the server, you should see on the browser, the text “Hello! I am learning Django”, which you defined in the index view.
+Viva
+[20 M] [10 M]
+27
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a JAVA Program to implement built-in support (java.util.Observable) Weather station with members temperature, humidity, pressure and methods mesurmentsChanged(), setMesurment(), getTemperature(), getHumidity(), getPressure()
+Q.2. Write a python program to implement Naive Bayes. Q.3 Create your own blog using Django
+Q.4 Viva
+[20 M]
+[20 M] [20 M]
+[10 M]
+28
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q. 1 Write a Java Program to implement State Pattern for Gumball Machine.
+Create instance variable that holds current state from there, we just need to handle all actions, behaviors and state transition that can happen [20 M]
+Q.2. Write a python program to implement Decision Tree whether or not to play Tennis. [20 M]
+Create a clone of the “Hacker News” website. [20 M]
+Viva
+[10 M]
+29
+
+Duration : 3 Hours
+Maximum Marks: 70
+Savitribai Phule Pune University
+M.Sc-II (Comp. Sci.) Sem-III Practical Examination -2022-23
+Practical Paper(CSUP235) on Software Architecture and Design Patterns,Machine Learning and Web Frameworks
+     Q.1 Write a Java Program to implement Factory method for Pizza Store with createPizza(), orederPizza(), prepare(), Bake(), cut(), box(). Use this to create variety of pizza’s
+like NyStyleCheesePizza, ChicagoStyleCheesePizza etc. Q.2. Write a python program to implement Linear SVM.
+Q.3 Implement Login System using Django.
+Q.4 Viva
+[20 M] [20 M] [20 M]
+[10 M]
+30
