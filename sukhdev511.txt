@@ -1,0 +1,77 @@
+Q.1
+class HeartModel {
+    void beat() {
+        System.out.println("Heart is beating.");
+    }
+}
+
+interface BeatModel {
+    void makeSound();
+}
+
+class HeartModelAdapter implements BeatModel {
+    private HeartModel heartModel;
+
+    public HeartModelAdapter(HeartModel heartModel) {
+        this.heartModel = heartModel;
+    }
+
+    @Override
+    public void makeSound() {
+        heartModel.beat();
+    }
+}
+
+public class AdapterPatternExample {
+    public static void main(String[] args) {
+        BeatModel adaptedModel = new HeartModelAdapter(new HeartModel());
+        adaptedModel.makeSound();
+    }
+}
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+Q.2
+import pandas as pd
+df = pd.read_csv('your_dataset.csv')
+print("Original Dataset:")
+print(df)
+null_values = df.isnull()
+print("\nNull Values:")
+print(null_values)
+df_cleaned = df.dropna()
+print("\nDataset after removing null values:")
+print(df_cleaned)
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+Q.3
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+  host: 'your_database_host',
+  user: 'your_database_user',
+  password: 'your_database_password',
+  database: 'your_database_name',
+});
+
+connection.connect();
+
+// Select all records
+connection.query('SELECT * FROM customers', (selectError, results) => {
+  if (selectError) throw selectError;
+
+  console.log('Selected records:', results);
+
+  // Delete a specified record
+  const customerIdToDelete = 1; // Replace with the actual ID
+  connection.query('DELETE FROM customers WHERE id = ?', [customerIdToDelete], (deleteError, deleteResults) => {
+    if (deleteError) throw deleteError;
+
+    console.log('Record deleted successfully.');
+
+    connection.end();
+  });
+});
